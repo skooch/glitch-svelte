@@ -29,7 +29,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 source /tmp/nvm/nvm.sh
 nvm install v16
 corepack enable
-corepack prepare pnpm@latest-8 --activate
+corepack prepare pnpm@latest --activate
 pnpm config set store-dir ~/.pnpm-store
-pnpm install
-pnpm vite dev --host $ORIGIN --port 3000
+pnpm install --frozen-lockfile
+pnpm vite dev --port 3000
