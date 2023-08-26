@@ -29,4 +29,4 @@ To create a production version of your app:
 pnpm run build
 ```
 
-Glitch will only run the production version by default, ensure you build your changes. You can run in development mode by changing the start command in `package.json` to `./glitch-dev.sh`
+Glitch will attempt to run the production built version by default, ensure you build your changes. If it can't find a production build, it will fall back to the development version. You can force it to always run in development mode by changing the start command in `package.json` to `./glitch-dev.sh`
