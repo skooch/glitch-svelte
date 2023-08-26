@@ -17,4 +17,3 @@ export DEFAULT_NODE_DIR=/tmp/nvm/versions/node/v16/bin
 # PROJECT_DOMAIN is from Glitch
 # We don't need to export PORT here because Glitch does
 export ORIGIN="$PROJECT_DOMAIN.glitch.me"
-export HOST="0.0.0.0"
