@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "svelte.svelte-vscode",
+        "bradlc.vscode-tailwindcss",
+        "p42ai.refactor",
+        "zardoy.ts-essential-plugins",
+        "dbaeumer.vscode-eslint"
+    ]
+}
