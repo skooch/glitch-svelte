@@ -33,4 +33,4 @@ To create a production version of your app:
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+Glitch will only run the production version by default, ensure you build your changes. You can run in development mode by changing the start command in `package.json` to `./glitch-dev.sh`
