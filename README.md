@@ -1,6 +1,6 @@
-# create-svelte
+# glitch-svelte
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Everything you need to build a Svelte project on [glitch.com](https://glitch.com), powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte) and [Tailwind](https://tailwindcss.com/).
 
 ## Creating a project
 
@@ -34,5 +34,3 @@ npm run build
 ```
 
 You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
