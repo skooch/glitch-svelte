@@ -3,6 +3,9 @@
 set -e
 set -a
 
+# We have to tell glitch to set our .config up because it gets wiped by remixing
+enable-pnpm
+
 if [ -d "/tmp/nvm" ]; then
     echo "Custom nvm already set-up"
 else
