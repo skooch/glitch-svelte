@@ -4,7 +4,7 @@ Everything you need to build a Svelte project on [glitch.com](https://glitch.com
 
 ## Remixing on Glitch
 
-The first time this project runs, it will error, because Glitch will attempt to run `npm install` and the version of Node that Glitch uses is not new enough to support SvelteKit. Ignore these errors, as Glitch will still run whatever is in `package.json`'s `start` field anyway afterwards, at which point we install the correct version of Node.
+Glitch will attempt to run `npm install` despite the version of Node that Glitch uses being not new enough to support SvelteKit. Glitch will still run whatever is in `package.json`'s `start` field anyway afterwards, at which point we delete `node_modules`, enable `pnpm`, and install the correct version of Node. This means your first startup time will be longer than usual if your app doesn't have a production build. Subsequent launches will be faster after a build is completed.
 
 Glitch uses docker containers of an old version of Ubuntu, which uses an old version of the Linux kernel and associated `glibc`, Node 16 is the newest version of node that will ever run on Glitch, unless they update their container.
 
