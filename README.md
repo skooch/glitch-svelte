@@ -2,6 +2,12 @@
 
 Everything you need to build a Svelte project on [glitch.com](https://glitch.com), powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte) and [Tailwind](https://tailwindcss.com/).
 
+## Remixing on Glitch
+
+The first time this project runs, it will error, because Glitch will attempt to run `npm install` and the version of Node that Glitch uses is not new enough to support SvelteKit. Ignore these errors, as Glitch will still run whatever is in `package.json`'s `start` field anyway afterwards, at which point we install the correct version of Node.
+
+Glitch uses docker containers of an old version of Ubuntu, which uses an old version of the Linux kernel and associated `glibc`, Node 16 is the newest version of node that will ever run on Glitch, unless they update their container.
+
 ## Developing
 
 Run `./glitch-dev.sh` if you're using the terminal on Glitch.
