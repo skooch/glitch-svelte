@@ -11,7 +11,10 @@ export NVM_DIR=/tmp/nvm
 export NODE_VERSION=v16
 
 # Glitch does some funny stuff with pnpm so we have to set this again
-export DEFAULT_NODE_DIR=/tmp/nvm/versions/node/v16.20.2/bin
+if [ $(ls /tmp/nvm/versions/node | grep v16) ]; then
+    export DEFAULT_NODE_DIR=/tmp/nvm/versions/node$(ls /tmp/nvm/versions/node | grep v16)/bin
+fi
+export PNPM_VOLUME=$(mount -l | grep pnpm-volume | grep rw | cut -d " " -f 3)
 
 # Node
 # PROJECT_DOMAIN is from Glitch
