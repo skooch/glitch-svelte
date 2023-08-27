@@ -11,9 +11,12 @@ export NVM_DIR=/tmp/nvm
 export NODE_VERSION=v16
 
 # Glitch does some funny stuff with pnpm so we have to set this again
-export DEFAULT_NODE_DIR=/tmp/nvm/versions/node/v16*/bin
+export DEFAULT_NODE_DIR=/tmp/nvm/versions/node/v16.20.2/bin
 
 # Node
 # PROJECT_DOMAIN is from Glitch
 # We don't need to export PORT here because Glitch does
 export ORIGIN="$PROJECT_DOMAIN.glitch.me"
+
+# Trying to fix glitch issues
+printenv > ~/.bash_profile
