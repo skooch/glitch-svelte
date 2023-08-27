@@ -13,6 +13,9 @@ export NODE_VERSION=v16
 # Glitch does some funny stuff with pnpm so we have to set this again
 if [ $(ls /tmp/nvm/versions/node | grep v16) ]; then
     export DEFAULT_NODE_DIR=/tmp/nvm/versions/node$(ls /tmp/nvm/versions/node | grep v16)/bin
+    export NVM_DIR="/tmp/nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 fi
 export PNPM_VOLUME=$(mount -l | grep pnpm-volume | grep rw | cut -d " " -f 3)
 

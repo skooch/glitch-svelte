@@ -1,5 +1,7 @@
 # glitch-svelte
 
+**This is a WIP, it's not production ready, don't use it**
+
 Everything you need to build a Svelte project on [glitch.com](https://glitch.com), powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte) and [Tailwind](https://tailwindcss.com/).
 
 ## Remixing on Glitch

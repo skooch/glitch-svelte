@@ -9,7 +9,6 @@ source ./scripts/env.sh
 
 # Check if we've done our custom node install, if not, do it
 source ./scripts/node.sh
-source /tmp/nvm/nvm.sh
 
 # Main script
 
